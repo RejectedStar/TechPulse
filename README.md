@@ -83,7 +83,7 @@ Welcome to **TechPulse Digest**, your go-to web application for staying updated 
 
 ## Contributing 🤝
 
-We welcome contributions to improve TechPulse Digest! Please fork the repository and submit pull requests with your enhancements.
+I welcome contributions to improve TechPulse Digest! Please fork the repository and submit pull requests with your enhancements.
 
 ## License 📜
 

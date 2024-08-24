@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech News Aggregator Signup</h1>
+        <form id="signup-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <h3>Select your favorite tech blogs:</h3>
+            <div>
+                <input type="checkbox" id="techcrunch" name="blogs" value="TechCrunch">
+                <label for="techcrunch">TechCrunch</label>
+            </div>
+            <div>
+                <input type="checkbox" id="theverge" name="blogs" value="The Verge">
+                <label for="theverge">The Verge</label>
+            </div>
+            <div>
+                <input type="checkbox" id="wired" name="blogs" value="Wired">
+                <label for="wired">Wired</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gizmodo" name="blogs" value="Gizmodo">
+                <label for="gizmodo">Gizmodo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="engadget" name="blogs" value="Engadget">
+                <label for="engadget">Engadget</label>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-functions.js"></script>
+
+    <!-- Your Firebase configuration -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "your-api-key",
+            authDomain: "your-auth-domain",
+            projectId: "your-project-id",
+            storageBucket: "your-storage-bucket",
+            messagingSenderId: "your-messaging-sender-id",
+            appId: "your-app-id"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+

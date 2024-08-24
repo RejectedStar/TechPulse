@@ -1,0 +1,13 @@
+{
+  "name": "functions",
+  "description": "Firebase Cloud Functions for sending daily tech news emails",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.15.6"
+  },
+  "engines": {
+    "node": "16"
+  }
+}
+
